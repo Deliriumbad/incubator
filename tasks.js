@@ -38,3 +38,16 @@ function greet(name){
     return num + '';
   }
   console.log(numberToString(17));
+
+  function testEven(n) {
+    if(n%2===0){
+      return true;
+    } else {
+      return false;
+    }
+  }
+  console.log(testEven(0));
+  console.log(testEven(0.5));
+  console.log(testEven(1));
+  console.log(testEven(2));
+  console.log(testEven(-4));
