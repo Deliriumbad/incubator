@@ -33,3 +33,8 @@ function greet(name){
   console.log(opposite(15));
   console.log(opposite(-5));
   console.log(opposite(17));
+
+  function numberToString(num) {
+    return num + '';
+  }
+  console.log(numberToString(17));
