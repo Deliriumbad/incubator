@@ -16,7 +16,7 @@ function greet(name){
   console.log(makeNegative(0));
   console.log(makeNegative(0.12));
   
-  
+
   function boolToWord(bool){
     if (bool===true) {
       return 'Yes';
@@ -26,3 +26,10 @@ function greet(name){
   }
   console.log(boolToWord(true));
   console.log(boolToWord(false));
+
+  function opposite(number) {
+    return -number;
+  }
+  console.log(opposite(15));
+  console.log(opposite(-5));
+  console.log(opposite(17));
