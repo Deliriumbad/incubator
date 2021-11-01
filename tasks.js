@@ -51,3 +51,14 @@ function greet(name){
   console.log(testEven(1));
   console.log(testEven(2));
   console.log(testEven(-4));
+
+
+  function arrayPlusArray(arr1, arr2) {
+    let arr = arr1.concat(arr2);
+    let sum = arr.reduce(function(sum, elem){
+      return sum += elem;                     
+    })
+  return sum;
+  }
+  console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]))//21
+  console.log(arrayPlusArray([-1, -2, -3], [-4, -5, -6]))//-21
