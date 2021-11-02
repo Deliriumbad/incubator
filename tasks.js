@@ -152,3 +152,16 @@ function updateLight(current) {
     console.log(getEvenNumbers([1,2]))
     console.log(getEvenNumbers([12,14,15]))
     console.log(getEvenNumbers([13,15]))
+
+
+    function highAndLow(numbers){
+      let newArr = [];
+      let arr = numbers.split(' ');
+      arr.map(function(elem){
+        return Number(elem)
+      })
+      newArr.push(Math.max.apply(null, arr), Math.min.apply(null, arr))
+      return newArr.join(' ')
+    }
+    
+    console.log(highAndLow('8 3 -5 42 -1 0 0 -9 4 7 4 -4'))
