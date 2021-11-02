@@ -147,7 +147,6 @@ function updateLight(current) {
       })
       return arr;
     }
-
     console.log(getEvenNumbers([1,2,3,6,8,10]))
     console.log(getEvenNumbers([1,2]))
     console.log(getEvenNumbers([12,14,15]))
@@ -163,5 +162,21 @@ function updateLight(current) {
       newArr.push(Math.max.apply(null, arr), Math.min.apply(null, arr))
       return newArr.join(' ')
     }
-    
     console.log(highAndLow('8 3 -5 42 -1 0 0 -9 4 7 4 -4'))
+
+    
+    function solution(str){
+      let word = str.split('').reverse().join('');
+      return word;
+    }
+    console.log(solution('hello'))
+
+    
+
+    function removeChar(str){
+      let word = str.split('');
+      word.pop();
+      word.shift();
+      return word.join('')
+      };
+      console.log(removeChar('hello'))
