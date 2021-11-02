@@ -169,7 +169,7 @@ function updateLight(current) {
       let word = str.split('').reverse().join('');
       return word;
     }
-    console.log(solution('hello'))
+    console.log(solution('hello'));
 
     
 
@@ -177,6 +177,24 @@ function updateLight(current) {
       let word = str.split('');
       word.pop();
       word.shift();
-      return word.join('')
-      };
-      console.log(removeChar('hello'))
+      return word.join('');
+    }
+      console.log(removeChar('hello'));
+
+
+      function fixTheMeerkat(arr) {
+        arr.reverse();
+        return arr;
+      }
+      console.log(fixTheMeerkat(["bottom", "middle", "top"]));
+
+
+      function getAverage(marks){
+        let mark = marks.reduce(function(sum,elem){
+          return sum+=elem;
+        })
+        return Math.floor(mark/marks.length);
+        }
+        console.log(getAverage([2,2,2,2]));
+        console.log(getAverage([1,2,3,4,5,]));
+        console.log(getAverage([1,1,1,1,1,1,1,2]));
