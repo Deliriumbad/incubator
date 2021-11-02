@@ -129,6 +129,7 @@ function updateLight(current) {
       }
     return first - second;
     }
+
     console.log(diffBig2([1, 8, 3]))//5
     console.log(diffBig2([2, 1]))//1
     console.log(diffBig2([1, 3, 8]))//5
