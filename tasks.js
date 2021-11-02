@@ -134,3 +134,21 @@ function updateLight(current) {
     console.log(diffBig2([2, 1]))//1
     console.log(diffBig2([1, 3, 8]))//5
     console.log(diffBig2([10, -1, 5]))//5
+
+    
+    
+    function getEvenNumbers(numbersArray){
+      let arr = numbersArray.filter(function(elem){
+        if(elem%2===0){
+          return true;
+        } else {
+          return false;
+        }
+      })
+      return arr;
+    }
+
+    console.log(getEvenNumbers([1,2,3,6,8,10]))
+    console.log(getEvenNumbers([1,2]))
+    console.log(getEvenNumbers([12,14,15]))
+    console.log(getEvenNumbers([13,15]))
