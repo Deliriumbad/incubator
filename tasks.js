@@ -111,3 +111,25 @@ function updateLight(current) {
     return str.split(' ').reverse().join(' ');
   }
   console.log(reverseWords('hello world!'));
+
+
+  function diffBig2(arr) {
+    let first = 0;
+    let second = 0;
+    for(let i = 0; i<arr.length; i++){
+      if(arr[i] >= first){
+        first = arr[i];
+      }
+    }
+    arr.splice(arr.indexOf(first), 1);
+      for(let i = 0; i<arr.length; i++){
+        if(arr[i] >= second){
+          second = arr[i];
+        }
+      }
+    return first - second;
+    }
+    console.log(diffBig2([1, 8, 3]))//5
+    console.log(diffBig2([2, 1]))//1
+    console.log(diffBig2([1, 3, 8]))//5
+    console.log(diffBig2([10, -1, 5]))//5
