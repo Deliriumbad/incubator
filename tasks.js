@@ -198,3 +198,32 @@ function updateLight(current) {
         console.log(getAverage([2,2,2,2]));
         console.log(getAverage([1,2,3,4,5,]));
         console.log(getAverage([1,1,1,1,1,1,1,2]));
+
+        
+        
+        function min (arr){
+          arr.sort(function(x,y){
+            if(x>y){
+              return 1
+            } else {
+              return -1
+            }
+          })
+          return arr[0]
+        }
+        
+        function max (arr){
+          arr.sort(function(x,y){
+            if(x<y){
+              return 1
+            } else {
+              return -1
+            }
+          })
+          return arr[0]
+        }
+
+    console.log(min([-52, 56, 30, 29, -54, 0, -110]), -110);
+    console.log(min([42, 54, 65, 87, 0]), 0);
+    console.log(max([4,6,2,1,9,63,-134,566]), 566);
+    console.log(max([5]), 5);
