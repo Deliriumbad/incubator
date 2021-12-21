@@ -292,3 +292,28 @@ function correct(string) {
 console.log(correct(("L0ND0N")))
 console.log(correct(("DUBL1N")))
 console.log(correct(("BUDAPE5T")))
+
+function simpleMultiplication(number) {
+  if (number % 2 === 0) {
+    return number * 8;
+  }
+  else {
+    return number * 9;
+  }
+}
+console.log(simpleMultiplication(2))
+console.log(simpleMultiplication(3))
+console.log(simpleMultiplication(1))
+console.log(simpleMultiplication(4))
+
+function isDivisible(n, x, y) {
+  if (n % x === 0 && n % y === 0) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+console.log(isDivisible(3, 3, 4))
+console.log(isDivisible(12, 3, 4))
+console.log(isDivisible(8, 3, 4))
