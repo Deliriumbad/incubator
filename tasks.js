@@ -317,3 +317,51 @@ function isDivisible(n, x, y) {
 console.log(isDivisible(3, 3, 4))
 console.log(isDivisible(12, 3, 4))
 console.log(isDivisible(8, 3, 4))
+
+function hero(bullets, dragons) {
+  if (bullets / dragons >= 2) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(hero(10, 5));
+console.log(hero(7, 4));
+console.log(hero(4, 5));
+console.log(hero(100, 40));
+
+
+function squareSum(numbers) {
+  let arr = numbers.map(function (elem) {
+    return elem ** 2;
+  })
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+console.log(squareSum([1, 2]));
+console.log(squareSum([0, 3, 4, 5]));
+console.log(squareSum([]));
+
+
+function remainderr(a, b) {
+  let arr = [a, b];
+  arr.sort(function (x, y) {
+    if (x > y) {
+      return -1;
+    }
+    if (x < y) {
+      return 1;
+    }
+  })
+  let rest = arr[0] % arr[1]
+  if (arr[1] === 0) {
+    return NaN;
+  } else {
+    return rest;
+  }
+}
+console.log(remainderr(17, 5));
+console.log(remainderr(1, 0));
