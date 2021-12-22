@@ -365,3 +365,36 @@ function remainderr(a, b) {
 }
 console.log(remainderr(17, 5));
 console.log(remainderr(1, 0));
+
+function abbrevName(name) {
+  let arr = name.split(' ');
+  return arr[0][0].toUpperCase() + '.' + arr[1][0].toUpperCase();
+}
+console.log(abbrevName("Sam Harris"));
+console.log(abbrevName("Patrick Feenan"));
+
+function makeUpperCase(str) {
+  str.split('');
+  let newStr = str.toUpperCase();
+  return newStr;
+}
+console.log(makeUpperCase("hello"));
+
+function ensureQuestion(s) {
+  let arr = s.split('');
+  if (s[s.length - 1] !== '?') {
+    arr.push('?')
+  }
+  return arr.join('')
+}
+console.log(ensureQuestion("Yes"));
+
+function greet(name) {
+  if (name === "Johnny") {
+    return "Hello, my love!";
+  } else {
+    return "Hello, " + name + "!";
+  }
+}
+console.log(greet("Jim"));
+console.log(greet("Johnny"));
