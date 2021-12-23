@@ -398,3 +398,63 @@ function greet(name) {
 }
 console.log(greet("Jim"));
 console.log(greet("Johnny"));
+
+function repeatStr(n, s) {
+  return s.repeat(n)
+}
+console.log(repeatStr(3, "*"));
+
+function isDivideBy(number, a, b) {
+  if (number % a === 0 && number % b === 0) {
+    return true;
+  } else {
+    return false
+  }
+}
+console.log(isDivideBy(-12, 2, -6));
+console.log(isDivideBy(-12, 2, -5));
+
+function cockroachSpeed(s) {
+  return parseInt(s * (100000 / (60 * 60)))
+}
+console.log(cockroachSpeed(1.08));
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(sonYearsOld * 2 - dadYearsOld)
+}
+console.log(twiceAsOld(36, 7));
+console.log(twiceAsOld(55, 30));
+
+const areaOrPerimeter = function (l, w) {
+  if (l === w) {
+    return l * w;
+  } else {
+    return (l + w) * 2
+  }
+};
+console.log(areaOrPerimeter(4, 4));
+console.log(areaOrPerimeter(6, 10));
+
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
+console.log(goals(0, 0, 0));
+console.log(goals(43, 10, 5));
+
+function doubleInteger(i) {
+  return i * 2;
+}
+console.log(doubleInteger(2));
+
+const multiply = (a, b) => a * b;
+console.log(multiply(2, 3));
+
+function addFive(num) {
+  var total = num + 5
+  return total;
+}
+
+function move(position, roll) {
+  return position + roll * 2;
+}
+console.log(move(3, 6));
