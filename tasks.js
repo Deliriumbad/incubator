@@ -500,3 +500,72 @@ var summation = function (num) {
   return (num * (num + 1)) / 2;
 }
 console.log(summation(8))
+
+function findLongest(str) {
+  let num = 0;
+  let arr = str.split(" ");
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > num) {
+      num = arr[i].length;
+    }
+  }
+  return num;
+}
+console.log(findLongest("The quick white fox jumped around the massive dog"));
+console.log(findLongest("Sausage chops"));
+
+function between(a, b) {
+  let result = [];
+  for (let i = a; i <= b; i++) {
+    result.push(i);
+  }
+  return result;
+}
+console.log(between(1, 4));
+console.log(between(-2, 2));
+
+function pipeFix(numbers) {
+  let first = [];
+  let second = [];
+  let arr = [];
+  let newArr = [];
+  numbers.sort(function (x, y) {
+    if (x > y) {
+      return 1;
+    }
+  });
+  first = numbers[0];
+  second = numbers[numbers.length - 1]
+  arr = [first, second];
+  for (let i = first; i <= second; i++) {
+    newArr.push(i);
+  }
+  return newArr;
+}
+console.log(pipeFix([1, 2, 3, 5, 6, 8, 9]));
+console.log(pipeFix([1, 2, 3, 12]));
+
+function find_average(array) {
+  let sum = array.reduce(function (sum, elem) {
+    return sum += elem;
+  });
+  return sum / array.length;
+}
+console.log(find_average([1, 1, 1]));
+console.log(find_average([1, 2, 3]));
+console.log(find_average([1, 2, 3, 4]));
+
+function find_average(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+  if (sum === 0) {
+    return 0;
+  } else {
+    return sum / array.length;
+  }
+}
+console.log(find_average([1, 1, 1]));
+console.log(find_average([1, 2, 3]));
+console.log(find_average([1, 2, 3, 4]));
