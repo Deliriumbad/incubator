@@ -569,3 +569,35 @@ function find_average(array) {
 console.log(find_average([1, 1, 1]));
 console.log(find_average([1, 2, 3]));
 console.log(find_average([1, 2, 3, 4]));
+
+function findOdd(array) {
+  let count = 0;
+  let arr = array.sort(function (x, y) {
+    if (x > y) {
+      return 1;
+    }
+  });
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[i] == arr[j]) {
+        count++;
+      }
+    }
+    if (count % 2 !== 0) {
+      return arr[i];
+    }
+  }
+}
+console.log(findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]));
+
+function positiveSum(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] >= 0) {
+      sum += arr[i];
+    }
+  }
+  return sum;
+}
+console.log(positiveSum([1, 2, 3, 4, 5]));
+console.log(positiveSum([1, -2, 3, 4, 5]));
