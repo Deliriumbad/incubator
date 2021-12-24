@@ -458,3 +458,45 @@ function move(position, roll) {
   return position + roll * 2;
 }
 console.log(move(3, 6));
+
+function evenNumbers(array, number) {
+  let arr = array.filter(function (elem) {
+    if (elem % 2 === 0) {
+      return true;
+    }
+  })
+  return arr.slice(-number);
+}
+console.log(evenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));
+console.log(evenNumbers([-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2));
+console.log(evenNumbers([6, -25, 3, 7, 5, 5, 7, -3, 23], 1));
+
+function missingNo(nums) {
+  let newArr = []
+  let arr = nums.sort(function (x, y) {
+    if (x < y) {
+      return -1;
+    }
+  })
+  arr.filter(function (elem, index) {
+    if (index === elem) {
+      newArr.push(elem)
+    }
+  })
+  return newArr[newArr.length - 1] + 1
+}
+console.log(missingNo([9, 45, 53, 10, 100, 30, 85, 72, 69, 93, 98, 27, 73, 82, 91, 60, 5, 79, 88, 18, 71, 36, 44, 22, 89, 40, 59, 80, 81, 67, 25, 54, 13, 64, 56, 39, 48, 92, 84, 94, 87, 90, 77, 63, 32, 68, 37, 96, 23, 0, 95, 1, 52, 78, 6, 57, 50, 2, 46, 19, 76, 47, 14, 4, 3, 29, 17, 11, 21, 24, 74, 65, 12, 83, 28, 41, 66, 7, 58, 55, 51, 43, 97, 42, 86, 49, 31, 20, 75, 70, 34, 33, 38, 8, 15, 62, 35, 61, 99, 16]))
+
+function litres(time) {
+  return Math.trunc(time * 0.5)
+}
+console.log(litres(2));
+console.log(litres(1.4));
+
+const square = (arg) => arg ** 2;
+console.log(square(3));
+
+var summation = function (num) {
+  return (num * (num + 1)) / 2;
+}
+console.log(summation(8))
