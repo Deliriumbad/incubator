@@ -601,3 +601,28 @@ function positiveSum(arr) {
 }
 console.log(positiveSum([1, 2, 3, 4, 5]));
 console.log(positiveSum([1, -2, 3, 4, 5]));
+
+function isPalindrome(x) {
+  let str = x.split('').reverse().join('').toUpperCase();
+  if (str === x.toUpperCase()) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isPalindrome("a"));
+console.log(isPalindrome("aba"));
+console.log(isPalindrome("Abba"));
+console.log(isPalindrome("hello"));
+
+function peopleWithAgeDrink(old) {
+  if (old >= 21) {
+    return "drink whisky";
+  } else if (old >= 18) {
+    return "drink beer";
+  } else if (old >= 14) {
+    return "drink coke";
+  }
+  return "drink toddy";
+}
+console.log(peopleWithAgeDrink(22));
