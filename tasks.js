@@ -642,3 +642,14 @@ console.log(basicOp('+', 4, 7));
 console.log(basicOp('-', 15, 18));
 console.log(basicOp('*', 5, 5));
 console.log(basicOp('/', 49, 7));
+
+function digitize(n) {
+  let arr = n.toString().split('').reverse()
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(+arr[i]);
+  }
+  return newArr;
+}
+console.log(digitize(35231));
+console.log(digitize(0));
