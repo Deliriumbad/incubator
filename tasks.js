@@ -664,3 +664,14 @@ function enough(cap, on, wait) {
 console.log(enough(10, 5, 5));
 console.log(enough(100, 60, 50));
 console.log(enough(20, 5, 5));
+
+function betterThanAverage(classPoints, yourPoints) {
+  let sum = classPoints.reduce((sum, elem) => sum += elem);
+  if (yourPoints > sum / classPoints.length) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(betterThanAverage([2, 3], 5));
+console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75));
