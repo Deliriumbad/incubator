@@ -698,3 +698,10 @@ function combineNames(a, b) {
   return a + ' ' + b;
 }
 console.log(combineNames('James', 'Stevens'));
+
+function distinct(a) {
+  let set = new Set(a);
+  return Array.from(set);
+}
+console.log(distinct([1, 2]));
+console.log(distinct([1, 1, 2]));
