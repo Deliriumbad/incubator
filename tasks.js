@@ -693,3 +693,8 @@ const quarterOf = (month) => {
 console.log(quarterOf(3))
 console.log(quarterOf(8))
 console.log(quarterOf(11))
+
+function combineNames(a, b) {
+  return a + ' ' + b;
+}
+console.log(combineNames('James', 'Stevens'));
