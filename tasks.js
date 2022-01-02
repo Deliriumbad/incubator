@@ -705,3 +705,16 @@ function distinct(a) {
 }
 console.log(distinct([1, 2]));
 console.log(distinct([1, 1, 2]));
+
+function hamming(a, b) {
+  let count = 0;
+
+  for (let i = 0; i < a.length; i += 1) {
+    if (a[i] !== b[i]) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(hamming("I like turtles", "I like turkeys"));
+console.log(hamming("Hello World", "Hello World"));
