@@ -718,3 +718,14 @@ function hamming(a, b) {
 }
 console.log(hamming("I like turtles", "I like turkeys"));
 console.log(hamming("Hello World", "Hello World"));
+
+function arraysSimilar(arr1, arr2) {
+  return JSON.stringify(arr1.sort()) === JSON.stringify(arr2.sort());
+}
+const arr1 = [1, 2, 2, 3, 4],
+  arr2 = [2, 1, 2, 4, 3],
+  arr3 = [1, 2, 3, 4],
+  arr4 = [1, 2, 3, "4"]
+console.log(arraysSimilar(arr1, arr2)); // Should equal true
+console.log(arraysSimilar(arr2, arr3)); // Should equal false
+console.log(arraysSimilar(arr3, arr4)); // Should equal false
