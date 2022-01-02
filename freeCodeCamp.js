@@ -33,3 +33,5 @@ c3 /= 11;//Compound Assignment With Augmented Division
 const myStr = "I am a \"double quoted\" string inside \"double quotes\"."; //Escaping Literal Quotes in Strings
 
 const myStr = "FirstLine\n\t\\SecondLine\nThirdLine";//Escape Sequences in Strings
+
+const myStr = "This is the start. " + "This is the end.";//Concatenating Strings with Plus Operator
