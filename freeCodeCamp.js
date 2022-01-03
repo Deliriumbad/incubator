@@ -71,3 +71,5 @@ const myAdjective = "big";
 const myVerb = "ran";
 const myAdverb = "quickly";
 const wordBlanks = "My " + myNoun + " is " + myAdjective + " and he " + myVerb + " " + myAdverb + "."; // Word Blanks
+
+const myArray = ['vit', 37];//Store Multiple Values in one Variable using JavaScript Arrays
