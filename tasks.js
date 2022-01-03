@@ -729,3 +729,9 @@ const arr1 = [1, 2, 2, 3, 4],
 console.log(arraysSimilar(arr1, arr2)); // Should equal true
 console.log(arraysSimilar(arr2, arr3)); // Should equal false
 console.log(arraysSimilar(arr3, arr4)); // Should equal false
+
+function smash(words) {
+  return words.join(' ');
+};
+console.log(smash(["hello", "world"]));
+console.log(smash(["hello", "amazing", "world"]));
