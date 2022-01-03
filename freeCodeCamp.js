@@ -115,3 +115,7 @@ function functionWithArgs(a, b) {
 }
 functionWithArgs(1, 2);
 functionWithArgs(7, 9);//Passing Values to Functions with Arguments
+
+function timesFive(arg) {
+    return arg * 5;
+}//Return a Value from a Function with Return
