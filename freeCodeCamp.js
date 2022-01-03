@@ -167,3 +167,13 @@ function processArg(num) {
     return (num + 3) / 5;
 }
 processed = processArg(7);//Assignment with a Returned Value
+
+function nextInLine(arr, item) {
+    arr.push(item);
+    let rem = arr.shift();
+    return rem;
+}
+const testArr = [1, 2, 3, 4, 5];
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));//Stand in Line
