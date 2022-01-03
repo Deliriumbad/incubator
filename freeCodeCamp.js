@@ -181,3 +181,10 @@ console.log("After: " + JSON.stringify(testArr));//Stand in Line
 function welcomeToBooleans() {
     return true;//Understanding Boolean Values
 }
+
+function trueOrFalse(wasThatTrue) {
+    if (wasThatTrue) {
+        return 'Yes, that was true';
+    }
+    return 'No, that was false';
+}//Use Conditional Logic with If Statements
