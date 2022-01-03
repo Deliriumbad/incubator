@@ -78,3 +78,6 @@ const myArray = [[1]];//Nest one Array within Another Array
 
 const myArray = [50, 60, 70];
 let myData = myArray[0]//Access Array Data with Indexes
+
+const myArray = [18, 64, 99];
+myArray[0] = 45;//Modify Array Data With Indexes
