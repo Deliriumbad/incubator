@@ -735,3 +735,10 @@ function smash(words) {
 };
 console.log(smash(["hello", "world"]));
 console.log(smash(["hello", "amazing", "world"]));
+
+function checkForFactor(base, factor) {
+  return base % factor === 0;
+}
+console.log(checkForFactor(63, 7));
+console.log(checkForFactor(2450, 5));
+console.log(checkForFactor(24612, 3));
