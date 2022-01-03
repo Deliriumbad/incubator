@@ -75,3 +75,6 @@ const wordBlanks = "My " + myNoun + " is " + myAdjective + " and he " + myVerb +
 const myArray = ['vit', 37];//Store Multiple Values in one Variable using JavaScript Arrays
 
 const myArray = [[1]];//Nest one Array within Another Array
+
+const myArray = [50, 60, 70];
+let myData = myArray[0]//Access Array Data with Indexes
