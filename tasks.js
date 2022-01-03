@@ -785,3 +785,8 @@ function howMuchILoveYou(nbPetals) {
 }
 console.log(howMuchILoveYou(3));
 console.log(howMuchILoveYou(6));
+
+function getAge(inputString) {
+  return +inputString[0];
+}
+console.log(getAge("4 years old"));
