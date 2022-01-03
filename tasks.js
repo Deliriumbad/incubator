@@ -790,3 +790,9 @@ function getAge(inputString) {
   return +inputString[0];
 }
 console.log(getAge("4 years old"));
+
+function century(year) {
+  return Math.floor(year / 100) + 1;
+}
+console.log(century(2000));
+console.log(century(89));
