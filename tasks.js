@@ -812,3 +812,10 @@ class Kata {
 }
 console.log(Kata.getVolumeOfCuboid(1, 2, 2));
 console.log(Kata.getVolumeOfCuboid(6.3, 2, 5));
+
+function nthEven(n) {
+  return n * 2 - 2;
+}
+console.log(nthEven(1));
+console.log(nthEven(2));
+console.log(nthEven(3));
