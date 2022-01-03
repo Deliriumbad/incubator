@@ -760,3 +760,9 @@ function getGrade(s1, s2, s3) {
 console.log(getGrade(95, 90, 93));
 console.log(getGrade(70, 70, 70));
 console.log(getGrade(48, 55, 52));
+
+function booleanToString(b) {
+  return b.toString();
+}
+console.log(booleanToString(true));
+console.log(booleanToString(false));
