@@ -832,3 +832,9 @@ function lovefunc(flower1, flower2) {
 }
 console.log(lovefunc(1, 4));
 console.log(lovefunc(2, 2));
+
+function gooseFilter(birds) {
+  let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter(item => !geese.includes(item));
+};
+console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]));
