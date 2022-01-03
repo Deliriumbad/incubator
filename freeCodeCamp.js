@@ -38,3 +38,6 @@ const myStr = "This is the start. " + "This is the end.";//Concatenating Strings
 
 let myStr = 'This is the first sentence. ';
 myStr += 'This is the second sentence.';//Concatenating Strings with the Plus Equals Operator
+
+const myName = "freeCodeCamp";
+const myStr = "Hello, our name is " + myName + "and I am well!";//Constructing Strings with Variables
