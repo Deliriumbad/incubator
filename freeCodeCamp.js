@@ -41,3 +41,7 @@ myStr += 'This is the second sentence.';//Concatenating Strings with the Plus Eq
 
 const myName = "freeCodeCamp";
 const myStr = "Hello, our name is " + myName + "and I am well!";//Constructing Strings with Variables
+
+const someAdjective = "awesome!";
+let myStr = "Learning to code is ";
+myStr += someAdjective;//Appending Variables to Strings
