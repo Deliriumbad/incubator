@@ -804,3 +804,11 @@ console.log(otherAngle(30, 60));
 console.log(otherAngle(60, 60));
 console.log(otherAngle(43, 78));
 console.log(otherAngle(10, 20));
+
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height;
+  }
+}
+console.log(Kata.getVolumeOfCuboid(1, 2, 2));
+console.log(Kata.getVolumeOfCuboid(6.3, 2, 5));
