@@ -845,3 +845,12 @@ function sixToast(num) {
 console.log(sixToast(6), 0);
 console.log(sixToast(17), 11);
 console.log(sixToast(3), 3);
+
+function sumStr(a, b) {
+  if (a == 0 && b == 0) {
+    return '0';
+  }
+  return (Number(a) + Number(b)).toString();
+}
+console.log(sumStr("4", "5"));
+console.log(sumStr("34", "5"));
