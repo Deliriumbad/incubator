@@ -778,3 +778,10 @@ function getRealFloor(n) {
 }
 console.log(getRealFloor(5));
 console.log(getRealFloor(15));
+
+function howMuchILoveYou(nbPetals) {
+  let arr = ["not at all", "I love you", "a little", "a lot", "passionately", "madly"];
+  return arr[nbPetals % 6];
+}
+console.log(howMuchILoveYou(3));
+console.log(howMuchILoveYou(6));
