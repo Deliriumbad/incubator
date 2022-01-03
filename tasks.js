@@ -742,3 +742,21 @@ function checkForFactor(base, factor) {
 console.log(checkForFactor(63, 7));
 console.log(checkForFactor(2450, 5));
 console.log(checkForFactor(24612, 3));
+
+function getGrade(s1, s2, s3) {
+  let sum = (s1 + s2 + s3) / 3;
+  if (sum <= 100 && sum >= 90) {
+    return 'A';
+  } else if (sum < 90 && sum >= 80) {
+    return 'B';
+  } else if (sum < 80 && sum >= 70) {
+    return 'C';
+  } else if (sum < 70 && sum >= 60) {
+    return 'D';
+  } else if (sum < 60 && sum >= 0) {
+    return 'F';
+  }
+}
+console.log(getGrade(95, 90, 93));
+console.log(getGrade(70, 70, 70));
+console.log(getGrade(48, 55, 52));
