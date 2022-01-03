@@ -838,3 +838,10 @@ function gooseFilter(birds) {
   return birds.filter(item => !geese.includes(item));
 };
 console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]));
+
+function sixToast(num) {
+  return Math.abs(num - 6);
+}
+console.log(sixToast(6), 0);
+console.log(sixToast(17), 11);
+console.log(sixToast(3), 3);
