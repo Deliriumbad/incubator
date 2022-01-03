@@ -53,3 +53,6 @@ lastNameLength = lastName.length;//Find the Length of a String
 let firstLetterOfLastName = "";
 const lastName = "Lovelace";
 firstLetterOfLastName = lastName[0]; // Use Bracket Notation to Find the First Character in a String
+
+let myStr = "Jello World";
+myStr = "Hello World"; // Understand String Immutability
