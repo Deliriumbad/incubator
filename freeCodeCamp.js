@@ -136,3 +136,10 @@ function fun2() {
     }
     console.log(output);
 }//Global Scope and Functions
+
+function myLocalScope() {
+    var myVar;
+    console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+console.log('outside myLocalScope', myVar);//Local Scope and Functions
