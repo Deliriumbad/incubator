@@ -109,3 +109,9 @@ function reusableFunction() {
     console.log("Hi World");
 }
 reusableFunction();//Write Reusable JavaScript with Functions
+
+function functionWithArgs(a, b) {
+    console.log(a + b);
+}
+functionWithArgs(1, 2);
+functionWithArgs(7, 9);//Passing Values to Functions with Arguments
