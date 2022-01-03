@@ -56,3 +56,6 @@ firstLetterOfLastName = lastName[0]; // Use Bracket Notation to Find the First C
 
 let myStr = "Jello World";
 myStr = "Hello World"; // Understand String Immutability
+
+const lastName = "Lovelace";
+const thirdLetterOfLastName = lastName[2];//Use Bracket Notation to Find the Nth Character in a String
