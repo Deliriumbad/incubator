@@ -885,3 +885,14 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 };
 console.log(zeroFuel(50, 25, 2));
 console.log(zeroFuel(100, 50, 1));
+
+function doubleChar(str) {
+  let res = '';
+  for (let i = 0; i < str.length; i++) {
+    res += str[i] + str[i];
+  }
+  return res;
+}
+console.log(doubleChar("1337"));
+console.log(doubleChar("illuminati"));
+console.log(doubleChar("123456"));
