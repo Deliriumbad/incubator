@@ -935,3 +935,18 @@ function invert(array) {
 }
 console.log(invert([1, 2, 3, 4, 5]));
 console.log(invert([1, -2, 3, -4, 5]));
+
+function twoHighest(arr) {
+  let set = Array.from(new Set(arr));
+  set.sort((a, b) => b - a);
+  if (set.length === 1) {
+    return [set[0]];
+  } else if (set.length === 0) {
+    return [];
+  } else {
+    return [set[0], set[1]];
+  }
+}
+console.log(twoHighest([]));
+console.log(twoHighest([15]));
+console.log(twoHighest([15, 20, 20, 17]));
