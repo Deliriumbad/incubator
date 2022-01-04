@@ -212,3 +212,11 @@ function compareEquality(a, b) {
     return "Not Equal";
 }
 compareEquality(10, "10");//Practice comparing different values
+
+function testNotEqual(val) {
+    if (val != 99) {
+        return "Not Equal";
+    }
+    return "Equal";
+}
+testNotEqual(10);//Comparison with the Inequality Operator
