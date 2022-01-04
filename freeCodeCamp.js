@@ -280,3 +280,11 @@ function testLogicalAnd(val) {
     return "No";
 }
 testLogicalAnd(10);//Comparisons with the Logical And Operator
+
+function testLogicalOr(val) {
+    if (val < 10 || val > 20) {
+        return "Outside";
+    }
+    return "Inside";
+}
+testLogicalOr(15);//Comparisons with the Logical Or Operator
