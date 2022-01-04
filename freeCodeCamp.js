@@ -436,3 +436,10 @@ function abTest(a, b) {
     return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
 }
 abTest(2, 2);//Return Early Pattern for Functions
+
+const myDog = {
+    'name': 'Max',
+    'legs': 4,
+    'tails': 1,
+    'friends': ['a lot of']//Build JavaScript Objects
+};
