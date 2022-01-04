@@ -1006,3 +1006,19 @@ String.prototype.toAlternatingCase = function () {
 console.log("HeLLo WoRLD".toAlternatingCase());
 console.log("12345".toAlternatingCase());
 console.log("1a2b3c4d5e".toAlternatingCase());
+
+function countPositivesSumNegatives(input) {
+  if (!input || !input.length) return [];
+  let count = 0;
+  let sum = 0;
+  for (let elem of input) {
+    if (elem > 0) {
+      count++;
+    }
+    if (elem < 0) {
+      sum += elem;
+    }
+  }
+  return [count, sum];
+}
+console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]));
