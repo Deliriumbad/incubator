@@ -960,3 +960,10 @@ function areYouPlayingBanjo(name) {
 console.log(areYouPlayingBanjo("Ringo"));
 console.log(areYouPlayingBanjo("bravo"));
 console.log(areYouPlayingBanjo("rolf"));
+
+function maps(x) {
+  return x.map(elem => elem * 2);
+}
+console.log(maps([1, 2, 3]));
+console.log(maps([4, 1, 1, 1, 4]));
+console.log(maps([2, 2, 2, 2, 2, 2]));
