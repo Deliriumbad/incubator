@@ -239,3 +239,14 @@ function testGreaterThan(val) {
     return "10 or Under";
 }
 testGreaterThan(10);//Comparison with the Greater Than Operator
+
+function testGreaterOrEqual(val) {
+    if (val >= 20) {
+        return "20 or Over";
+    }
+    if (val >= 10) {
+        return "10 or Over";
+    }
+    return "Less than 10";
+}
+testGreaterOrEqual(10);//Comparison with the Greater Than Or Equal To Operator
