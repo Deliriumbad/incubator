@@ -950,3 +950,13 @@ function twoHighest(arr) {
 console.log(twoHighest([]));
 console.log(twoHighest([15]));
 console.log(twoHighest([15, 20, 20, 17]));
+
+function areYouPlayingBanjo(name) {
+  if (name[0] === "R" || name[0] === 'r') {
+    return name + ' plays banjo';
+  }
+  return name + ' does not play banjo';
+}
+console.log(areYouPlayingBanjo("Ringo"));
+console.log(areYouPlayingBanjo("bravo"));
+console.log(areYouPlayingBanjo("rolf"));
