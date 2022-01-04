@@ -896,3 +896,18 @@ function doubleChar(str) {
 console.log(doubleChar("1337"));
 console.log(doubleChar("illuminati"));
 console.log(doubleChar("123456"));
+
+function greet(name) {
+  return 'Hello, ' + name + ' how are you doing today?';
+}
+console.log(greet("Ryan"));
+console.log(greet("Shingles"));
+
+const reverseSeq = n => {
+  let arr = [];
+  for (let i = 1; i <= n; i++) {
+    arr.push(i);
+  }
+  return arr.reverse()
+};
+console.log(reverseSeq(5));
