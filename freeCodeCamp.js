@@ -517,3 +517,28 @@ function checkObj(obj, checkProp) {
     }
 }//Testing Objects for Properties
 
+const myMusic = [
+    {
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1973,
+        "formats": [
+            "CD",
+            "8T",
+            "LP"
+        ],
+        "gold": true
+    },
+    {
+        "artist": "Sting",
+        "title": "English Man",
+        "release_year": 1999,
+        "formats": [
+            "CD",
+            "8T",
+            "LP"
+        ],
+        "gold": true
+    }
+];//Manipulating Complex Objects
+
