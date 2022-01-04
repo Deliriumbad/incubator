@@ -911,3 +911,9 @@ const reverseSeq = n => {
   return arr.reverse()
 };
 console.log(reverseSeq(5));
+
+function check(a, x) {
+  return a.includes(x);
+}
+console.log(check([66, 101], 101));
+console.log(check([101, 45, 75, 105, 99, 107], 98));
