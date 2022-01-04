@@ -990,3 +990,19 @@ function solution(a, b) {
 console.log(solution('45', '1'));
 console.log(solution('13', '200'));
 console.log(solution('Soon', 'Me'));
+
+
+String.prototype.toAlternatingCase = function () {
+  let str = '';
+  for (let i = 0; i < this.length; i++) {
+    if (this[i] === this[i].toLowerCase()) {
+      str += this[i].toUpperCase();
+    } else {
+      str += this[i].toLowerCase();
+    }
+  }
+  return str;
+}
+console.log("HeLLo WoRLD".toAlternatingCase());
+console.log("12345".toAlternatingCase());
+console.log("1a2b3c4d5e".toAlternatingCase());
