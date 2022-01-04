@@ -451,3 +451,11 @@ const testObj = {
 };
 const hatValue = testObj.hat;
 const shirtValue = testObj.shirt;//Accessing Object Properties with Dot Notation
+
+const testObj = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
+};
+const entreeValue = testObj["an entree"];
+const drinkValue = testObj["the drink"];//Accessing Object Properties with Bracket Notation
