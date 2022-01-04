@@ -917,3 +917,9 @@ function check(a, x) {
 }
 console.log(check([66, 101], 101));
 console.log(check([101, 45, 75, 105, 99, 107], 98));
+
+function reverseList(list) {
+  return list.reverse();
+}
+console.log(reverseList([1, 2, 3, 4]));
+console.log(reverseList([3, 1, 5, 4]));
