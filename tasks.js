@@ -980,3 +980,13 @@ function strCount(str, letter) {
 console.log(strCount('Hello', 'o'));
 console.log(strCount('Hello', 'l'));
 console.log(strCount('', 'z'));
+
+function solution(a, b) {
+  if (a.length > b.length) {
+    return b + a + b;
+  }
+  return a + b + a;
+}
+console.log(solution('45', '1'));
+console.log(solution('13', '200'));
+console.log(solution('Soon', 'Me'));
