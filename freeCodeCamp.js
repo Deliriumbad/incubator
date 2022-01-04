@@ -188,3 +188,11 @@ function trueOrFalse(wasThatTrue) {
     }
     return 'No, that was false';
 }//Use Conditional Logic with If Statements
+
+function testEqual(val) {
+    if (val == 27) {
+        return "Equal";
+    }
+    return "Not Equal";
+}
+testEqual(10);//Comparison with the Equality Operator
