@@ -1068,3 +1068,12 @@ function spEng(sentence) {
 }
 console.log(spEng("english"));
 console.log(spEng("egnlish"));
+
+function howManyLightsabersDoYouOwn(name) {
+  if (name === 'Zach') {
+    return 18;
+  }
+  return 0;
+}
+console.log(howManyLightsabersDoYouOwn("Adam"));
+console.log(howManyLightsabersDoYouOwn("Zach"));
