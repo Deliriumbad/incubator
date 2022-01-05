@@ -1077,3 +1077,8 @@ function howManyLightsabersDoYouOwn(name) {
 }
 console.log(howManyLightsabersDoYouOwn("Adam"));
 console.log(howManyLightsabersDoYouOwn("Zach"));
+
+var TempleStrings = function (obj, feature) {
+  return obj + ' are ' + feature;
+}
+console.log(TempleStrings("Animals", "Good"));
