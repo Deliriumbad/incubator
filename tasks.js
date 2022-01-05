@@ -1055,3 +1055,16 @@ function countBy(x, n) {
   return z;
 }
 console.log(countBy(1, 10));
+
+function spEng(sentence) {
+  return sentence.includes("english");
+}
+console.log(spEng("english"));
+console.log(spEng("egnlish"));
+
+function spEng(sentence) {
+  let word = sentence.toLowerCase();
+  return word.includes("english");
+}
+console.log(spEng("english"));
+console.log(spEng("egnlish"));
