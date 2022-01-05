@@ -1095,3 +1095,12 @@ function divisibleBy(numbers, divisor) {
 console.log(divisibleBy([1, 2, 3, 4, 5, 6], 2), [2, 4, 6]);
 console.log(divisibleBy([1, 2, 3, 4, 5, 6], 3), [3, 6]);
 console.log(divisibleBy([0, 1, 2, 3, 4, 5, 6], 4), [0, 4]);
+
+function mergeArrays(arr1, arr2) {
+  let arr = arr1.concat(arr2);
+  arr.sort((a, b) => a - b);
+  return Array.from(new Set(arr));
+}
+console.log(mergeArrays([1, 2, 3, 4], [5, 6, 7, 8]));
+console.log(mergeArrays([1, 3, 5, 7, 9], [10, 8, 6, 4, 2]));
+console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12]));
