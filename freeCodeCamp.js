@@ -621,3 +621,11 @@ do {
     i++;
 } while (i < 11);//Iterate with JavaScript Do...While Loops
 
+function sum(arr, n) {
+    if (n <= 0) {
+        return 0;
+    } else {
+        return sum(arr, n - 1) + arr[n - 1];
+    }
+}//Replace Loops using Recursion
+
