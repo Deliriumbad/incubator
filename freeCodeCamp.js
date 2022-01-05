@@ -633,4 +633,9 @@ function randomFraction() {
     return Math.random();
 }//Generate Random Fractions with JavaScript
 
+let number = Math.floor(Math.random() * 10);
+function randomWholeNum() {
+    return Math.floor(Math.random() * 5);
+}//Generate Random Whole Numbers with JavaScript
+
 
