@@ -1041,3 +1041,8 @@ function fakeBin(x) {
   return arr.join('');
 }
 console.log(fakeBin('45385593107843568'));
+
+var replaceDots = function (str) {
+  return str.replace(/\./g, '-');
+}
+console.log(replaceDots("one.two.three"));
