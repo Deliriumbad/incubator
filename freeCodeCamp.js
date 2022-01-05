@@ -683,3 +683,6 @@ editInPlace();//Mutate an Array Declared with const
 const magic = () => new Date();//Use Arrow Functions to Write Concise Anonymous Functions
 
 const myConcat = (arr1, arr2) => arr1.concat(arr2);//Write Arrow Functions with Parameters
+
+const increment = (number, value = 1) => number + value;
+console.log(increment(5, 2));//Set Default Parameters for Your Functions
