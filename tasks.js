@@ -1022,3 +1022,9 @@ function countPositivesSumNegatives(input) {
   return [count, sum];
 }
 console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]));
+
+function sumMix(x) {
+  let arr = x.map(elem => +elem);
+  let res = arr.reduce((sum, elem) => sum += elem);
+  return res;
+}
