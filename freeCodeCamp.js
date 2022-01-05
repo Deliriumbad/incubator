@@ -679,3 +679,5 @@ function editInPlace() {
     s[2] = 7;
 }
 editInPlace();//Mutate an Array Declared with const
+
+const magic = () => new Date();//Use Arrow Functions to Write Concise Anonymous Functions
