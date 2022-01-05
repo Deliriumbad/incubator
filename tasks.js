@@ -1046,3 +1046,12 @@ var replaceDots = function (str) {
   return str.replace(/\./g, '-');
 }
 console.log(replaceDots("one.two.three"));
+
+function countBy(x, n) {
+  let z = [];
+  for (let i = 1; i < n + 1; i++) {
+    z.push(x * i);
+  }
+  return z;
+}
+console.log(countBy(1, 10));
