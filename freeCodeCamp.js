@@ -686,3 +686,7 @@ const myConcat = (arr1, arr2) => arr1.concat(arr2);//Write Arrow Functions with 
 
 const increment = (number, value = 1) => number + value;
 console.log(increment(5, 2));//Set Default Parameters for Your Functions
+
+const sum = (...args) => {
+    return args.reduce((a, b) => a + b, 0);
+}//Use the Rest Parameter with Function Parameters
