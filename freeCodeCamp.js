@@ -642,4 +642,9 @@ function randomRange(myMin, myMax) {
     return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
 }//Generate Random Whole Numbers within a Range
 
+function convertToInteger(str) {
+    return parseInt(str);
+}
+convertToInteger("56");//Use the parseInt Function
+
 
