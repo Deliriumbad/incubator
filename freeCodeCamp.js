@@ -629,3 +629,8 @@ function sum(arr, n) {
     }
 }//Replace Loops using Recursion
 
+function randomFraction() {
+    return Math.random();
+}//Generate Random Fractions with JavaScript
+
+
